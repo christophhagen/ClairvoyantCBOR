@@ -6,6 +6,9 @@ import CBORCoding
 import FoundationNetworking
 #endif
 
+#if canImport(ClairvoyantClient)
+import ClairvoyantClient
+
 public extension MetricConsumer {
 
     /**
@@ -31,3 +34,4 @@ public extension MetricConsumer {
                 decoder: decoder)
     }
 }
+#endif
